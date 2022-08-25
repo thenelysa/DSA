@@ -1,0 +1,25 @@
+//fibonacci series
+#include<stdio.h>
+#include<conio.h>
+int recu(int);
+int main()
+{
+	int n,i,result;
+	printf("\nEnter the number :");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		result=recu(n);
+		printf(" %d ",result);
+	}
+	return 0;
+}
+int recu(int n1)
+{
+	int i;
+	for(i=0;i<n1;i++)
+	{
+		return (recu(n1-1)+recu(n1-2));
+		
+	}
+}
